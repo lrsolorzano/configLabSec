@@ -25,3 +25,19 @@ Laboratorio completo para pruebas de seguridad y pentesting en Google Cloud Plat
 
 ## Inicio Rápido
 Ver docs/SETUP.md para instrucciones detalladas.
+
+```mermaid
+graph LR
+    Internet((Internet))
+
+    subgraph VPC lab-ciber
+        Kali[Kali Linux<br>Atacante]
+        Ubuntu[Ubuntu Server<br>Objetivo Web]
+        Windows[Windows Server<br>AD / SMB]
+    end
+
+    Internet --> Kali
+    Kali --> Ubuntu
+    Kali --> Windows
+    Ubuntu --> Windows
+```
