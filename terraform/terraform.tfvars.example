@@ -1,0 +1,14 @@
+# Example Terraform Variables
+
+# Your Google Cloud Project ID
+project_id = "YOUR_GCP_PROJECT_ID"
+
+# Region for your resources
+region = "us-central1"
+
+# Machine types available:
+# - e.g., e2-standard-2
+machine_type = "YOUR_MACHINE_TYPE"
+
+# Your local IP address for SSH access
+local_ip = "YOUR_LOCAL_IP"
